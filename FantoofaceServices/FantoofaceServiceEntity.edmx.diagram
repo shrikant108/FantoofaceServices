@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1805175a374442938de1dc15d5f3ddd2" Name="Diagram1">
+        <EntityTypeShape EntityType="FantoofaceService_dbModel.Tbl_Application" Width="1.5" PointX="1.7644669775685609" PointY="10.337113891885203" />
+        <EntityTypeShape EntityType="FantoofaceService_dbModel.Tbl_Category" Width="1.5" PointX="3.6110735943592491" PointY="29.419277681698688" />
+        <EntityTypeShape EntityType="FantoofaceService_dbModel.tbl_Tutorial" Width="1.5" PointX="5.6065097030282534" PointY="12.144219270043177" />
+        <AssociationConnector Association="FantoofaceService_dbModel.FK_tbl_Tutorial_Tbl_Application" />
+        <AssociationConnector Association="FantoofaceService_dbModel.FK_tbl_Tutorial_Tbl_Category" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

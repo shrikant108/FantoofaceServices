@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FantoofaceService_dbModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="FantoofaceService_dbModelStoreContainer">
+    <EntitySet Name="Tbl_Application" EntityType="FantoofaceService_dbModel.Store.Tbl_Application" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tbl_Category" EntityType="FantoofaceService_dbModel.Store.Tbl_Category" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Tutorial" EntityType="FantoofaceService_dbModel.Store.tbl_Tutorial" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_tbl_Tutorial_Tbl_Application" Association="FantoofaceService_dbModel.Store.FK_tbl_Tutorial_Tbl_Application">
+      <End Role="Tbl_Application" EntitySet="Tbl_Application" />
+      <End Role="tbl_Tutorial" EntitySet="tbl_Tutorial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Tutorial_Tbl_Category" Association="FantoofaceService_dbModel.Store.FK_tbl_Tutorial_Tbl_Category">
+      <End Role="Tbl_Category" EntitySet="Tbl_Category" />
+      <End Role="tbl_Tutorial" EntitySet="tbl_Tutorial" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Tbl_Application">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="AppName" Type="varchar" MaxLength="200" />
+    <Property Name="APPKey" Type="uniqueidentifier" />
+    <Property Name="createdDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Tbl_Category">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="categoryname" Type="varchar" MaxLength="200" />
+    <Property Name="createdDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Tutorial">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="catId" Type="int" />
+    <Property Name="AppID" Type="int" />
+    <Property Name="Title" Type="varchar" MaxLength="500" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="createdDate" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_tbl_Tutorial_Tbl_Application">
+    <End Role="Tbl_Application" Type="FantoofaceService_dbModel.Store.Tbl_Application" Multiplicity="0..1" />
+    <End Role="tbl_Tutorial" Type="FantoofaceService_dbModel.Store.tbl_Tutorial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Application">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tbl_Tutorial">
+        <PropertyRef Name="AppID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Tutorial_Tbl_Category">
+    <End Role="Tbl_Category" Type="FantoofaceService_dbModel.Store.Tbl_Category" Multiplicity="1" />
+    <End Role="tbl_Tutorial" Type="FantoofaceService_dbModel.Store.tbl_Tutorial" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Category">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tbl_Tutorial">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

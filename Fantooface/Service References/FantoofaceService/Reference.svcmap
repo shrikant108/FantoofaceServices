@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5f93a52c-8482-48ab-b5ba-808ea24ca119" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49156/TutorialService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TutorialService.xsd" MetadataType="Schema" ID="54207be4-40a5-4344-9b34-ffbd4cf9bbc8" SourceId="1" SourceUrl="http://localhost:49156/TutorialService.svc?xsd=xsd2" />
+    <MetadataFile FileName="TutorialService.disco" MetadataType="Disco" ID="8dc6d14e-cd64-4848-b37f-8cf0f6132fac" SourceId="1" SourceUrl="http://localhost:49156/TutorialService.svc?disco" />
+    <MetadataFile FileName="TutorialService.wsdl" MetadataType="Wsdl" ID="83a2ba01-f618-4858-bb45-7431dd9ef9ec" SourceId="1" SourceUrl="http://localhost:49156/TutorialService.svc?wsdl" />
+    <MetadataFile FileName="TutorialService1.xsd" MetadataType="Schema" ID="fb1240ce-9263-4576-8c9b-0a0cecd25619" SourceId="1" SourceUrl="http://localhost:49156/TutorialService.svc?xsd=xsd0" />
+    <MetadataFile FileName="TutorialService2.xsd" MetadataType="Schema" ID="c2941573-5730-4add-a322-949e8e3204cb" SourceId="1" SourceUrl="http://localhost:49156/TutorialService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

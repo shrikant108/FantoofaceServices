@@ -1,0 +1,7 @@
+D:\Project\FantoofaceServices\FantoofaceServices\bin\FantoofaceServices.dll
+D:\Project\FantoofaceServices\FantoofaceServices\bin\FantoofaceServices.pdb
+D:\Project\FantoofaceServices\FantoofaceServices\bin\EntityFramework.dll
+D:\Project\FantoofaceServices\FantoofaceServices\bin\EntityFramework.xml
+D:\Project\FantoofaceServices\FantoofaceServices\obj\Debug\FantoofaceServices.csprojResolveAssemblyReference.cache
+D:\Project\FantoofaceServices\FantoofaceServices\obj\Debug\FantoofaceServices.dll
+D:\Project\FantoofaceServices\FantoofaceServices\obj\Debug\FantoofaceServices.pdb
